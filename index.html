@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patriotic Union - Building a Better Future</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #CC0000;
+            --accent-color: #FFD700;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('img/FREEDOM.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .platform-card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo-cotainer"> <img src="img/PU_LOGO.png"  
+                alt="logo" class="logo"> 
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="leadership.html">Leadership Training</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>A better future and hope for DR.Congo </h1>
+            <a href="mailto:ekangpolese@gmail.com" class="cta-button">Join the Movement</a> 
+        </div>
+    </section>
+
+    <section class="section" id="platform">
+        <h2>Our Planned Reforms</h2>
+        <div class="platform-grid">
+            <div class="platform-card">
+                <h3>Economic Reform</h3>
+                <p>1. Fiscal Stability & Debt Management
+                    Implement responsible budgeting with a focus on reducing deficits.
+                    Streamline government spending by cutting waste and increasing efficiency.
+                    Improve tax collection to reduce evasion while keeping rates competitive.
+                    2. Business Growth & Investment
+                    Simplify regulations to encourage entrepreneurship and attract foreign investment.
+                    Offer tax incentives for high-growth industries such as technology and manufacturing.
+                    Strengthen property rights and contract enforcement to boost investor confidence.
+                    3. Job Creation & Workforce Development
+                    Invest in vocational training and digital skills programs to match labor market needs.
+                    Encourage private sector job growth through public-private partnerships.
+                    Support small and medium-sized enterprises (SMEs) with access to credit and grants.
+                    4. Infrastructure & Innovation
+                    Modernize transport, energy, and digital infrastructure to enhance productivity.
+                    Promote green energy initiatives to reduce dependency on fossil fuels.
+                    Foster research and development (R&D) through tax credits and innovation hubs.
+                    5. Social Welfare & Cost of Living
+                    Implement targeted subsidies for essential goods to protect low-income families.
+                    Strengthen social security systems while ensuring financial sustainability.
+                    Promote affordable housing and healthcare reforms to reduce living costs.
+                    6. Trade & Economic Diversification
+                    Reduce reliance on a single industry by diversifying into high-value sectors.
+                    Expand international trade partnerships to open new markets.
+                    Support agriculture and local industries to increase self-sufficiency.</p>
+            </div>
+            <div class="platform-card">
+                <h3>Education</h3>
+                <p>1. Access & Equity in Education
+                    Ensure universal access to quality education by expanding school infrastructure.
+                    Provide free or subsidized education for low-income families.
+                    Bridge the urban-rural education gap with targeted policies and digital learning.
+                    2. Curriculum & Skill Development
+                    Modernize curricula to align with global standards and job market demands.
+                    Emphasize STEM (Science, Technology, Engineering, Mathematics) and digital literacy.
+                    Promote vocational training and entrepreneurship education to reduce unemployment.
+                    3. Teacher Training & Compensation
+                    Improve teacher training programs to enhance teaching quality.
+                    Offer competitive salaries and incentives to attract and retain skilled educators.
+                    Implement continuous professional development programs for teachers.
+                    4. Higher Education & Research
+                    Increase funding for universities and research institutions.
+                    Strengthen partnerships between academia and industry to drive innovation.
+                    Provide scholarships and student loan programs for higher education affordability.
+                    5. Technology Integration & Digital Learning
+                    </p>
+            </div>
+            <div class="platform-card">
+                <h3>Healthcare</h3>
+                <p>1. Universal Access & Affordability
+                    Expand healthcare coverage to ensure affordable access for all citizens.
+                    Strengthen public health insurance schemes to reduce out-of-pocket costs.
+                    Increase funding for primary healthcare centers, especially in rural areas.
+                    2. Healthcare Workforce & Training
+                    Recruit, train, and retain more doctors, nurses, and healthcare professionals.
+                    Improve working conditions and salaries to prevent brain drain.
+                    Expand medical education programs and offer incentives for service in underserved areas.
+                    3. Hospital & Infrastructure Development
+                    Invest in modernizing hospitals and clinics with up-to-date medical technology.
+                    Strengthen emergency response systems and build more specialized medical centers.
+                    Implement digital health records and telemedicine to improve efficiency.
+                    4. Preventive & Public Health Initiatives
+                    Promote vaccination campaigns and preventive care programs.
+                    Improve sanitation, clean water access, and nutrition programs to reduce disease burden.
+                    Strengthen awareness campaigns on lifestyle diseases such as diabetes and hypertension.
+                    5. Pharmaceutical & Medical Supply Chain
+                    Regulate drug prices to make essential medicines more affordable.
+                    Encourage local pharmaceutical production to reduce dependence on imports.
+                    Ensure transparency and efficiency in medical procurement processes</p>
+            </div>
+            <div class="platform-card">
+                <h3>Our Leadership Training</h3>
+                <p>We train motivated people to become leaders and contribute positively to their communities</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="candidates">
+        <h2>Our Leadership</h2>
+        <div class="platform-grid">
+            <div class="platform-card">
+                <img src="img/Joel kapapa.jpg" alt="Candidate" style="width:10%; border-radius: 5px;">
+                <h3>Joel Kapapa</h3>
+                <p>Party Leader</p>
+            </div>
+            <!-- Add more candidates -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Patriotic Union. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 1rem;">Privacy Policy</a>
+            <a href="#" style="color: white; margin: 0 1rem;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Newsletter form submission
+        document.querySelector('.cta-button').addEventListener('click', () => {
+            const email = prompt('Enter your email to join our movement:');
+            if (email) {
+                // Add your submission logic here
+                alert('Thank you for joining! We will be in touch.');
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.background = 'rgba(255,255,255,0.98)';
+            } else {
+                document.querySelector('.navbar').style.background = 'rgba(255,255,255,0.95)';
+            }
+        });
+    </script>
+</body>
+</html>

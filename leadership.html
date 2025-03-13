@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patriotic Union - Building a Better Future</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #CC0000;
+            --accent-color: #FFD700;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo-cotainer"> <img src="img/PU_LOGO.png"  
+                alt="logo" class="logo"> 
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#Leadership Training">Leadership Training</a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div
+         class="container">
+    </div>
+
+    <article> <h3>Project of leadership Training Center</h3></article>
+<p>DRCongo is experiencing a leadership crisis for many years, and the solution is to have good and educated servants  leaders to respond to this crisis. Therefore, we went to  create a leadership center focusing on the power of love and integrity. The goal is to educate  more servants leaders who will apply the principles of love and integrity to create a just  and beloved Congo for the realization of the common good and the greatest happiness of the people. The leadership center has two immediate goals.  First, to educate  new generation of leaders of integrity and help them develop and integrate four type of intelligences  or capacities.  One mental intelligence that implies vision  for a better future.  Two physical intelligence that implies  discipline ,orderliness, and motivation . Three. Emotional intelligence implies self-control, passion, compassion,  collaboration, and interdepency. Lastly, spiritual intelligence implies conscience,  integrity,  love, altruism , honesty generosity, and hospitality</p>
+   <p>To promote the greatest human happiness, every leader must develop four (4) skills or intelligence, namely: <br> 1. Mental intelligence = vision, i.e. a clear and precise image of the future. <br> 2. Physical intelligence = discipline, order and harmony. <br> 3. Emotional intelligence = passion, conviction, self-control, compassion and love for others. <br> 4. Spiritual intelligence = conscience, integrity, honesty, transparency and faith</p>
+
+    <p><h3>here are some images of how the leadership center will look like</p></h3>
+
+   <p> <img src="img/leadership center01.jpg" style="max-width: 600px" width="800" height="400"></p>
+   <img src="img/leadership center02.jpg" style="max-width: 600px" width="800" height="400">
+   <img src="img/leadership center03.jpg" style="max-width: 600px" width="800" height="400">
+   <img src="img/leadership center04.jpg" style="max-width: 600px" width="800" height="400">
+   <img src="img/leadership center05.jpg" style="max-width: 600px" width="800" height="400">
+</div>
+    
+   </body>
+   <footer>
+        <p>© 2025 Patriotic Union. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 1rem;">Privacy Policy</a>
+            <a href="#" style="color: white; margin: 0 1rem;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Newsletter form submission
+        document.querySelector('.cta-button').addEventListener('click', () => {
+            const email = prompt('Enter your email to join our movement:');
+            if (email) {
+                // Add your submission logic here
+                alert('Thank you for joining! We will be in touch.');
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.background = 'rgba(255,255,255,0.98)';
+            } else {
+                document.querySelector('.navbar').style.background = 'rgba(255,255,255,0.95)';
+            }
+        });
+    </script>
+</body>
+</html>

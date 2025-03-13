@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patriotic Union - Building a Better Future</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #CC0000;
+            --accent-color: #FFD700;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('img/FREEDOM.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .platform-card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo-cotainer"> <img src="img/PU_LOGO.png"  
+                alt="logo" class="logo"> 
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#candidates">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#Leadership Training">Leadership Training</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>A better future and hope for DR.Congo</h1>
+            <button class="cta-button">Join the Movement</button>
+        </div>
+    </section>
+
+    <section class="section" id="platform">
+      
+        <div class="platform-grid">
+            <div class="platform-card">
+                <h3>About Us</h3>
+                <p>At Patriotic Union , we believe in creating a brighter, more equitable future by empowering communities and fostering progressive change. We are a grassroots organization dedicated to fighting injustice, economic inequality and corruption in society.
+      Our journey began with the simple belief that every citizen deserves access to quality education, healthcare, decent housing, water, electricity and job opportunities because prosperity should empower every community. Overtime, we are still growing into a movement that brings together passionate individuals, policymakers, and communities to advocate for change at all levels of society and government.</p>
+            </div>
+            <div class="platform-card">
+                <h3>Our Mission</h3>
+                <p>Our core mission is fighting corruption and inequalities revolving around fostering transparency, fairness, and justice within our society. This mission typically includes the following objectives:
+                    1. Accountability: Ensuring that individuals, institutions, and governments operate with integrity and are held accountable for their actions.
+                    
+                    2. Enhancing Transparency: Encouraging open access to information about decision-making processes, resource allocation, and governance to reduce opportunities for corruption.
+                    
+                    3. Upholding Social Justice: Addressing systemic inequalities by creating fair opportunities for all, especially marginalized and vulnerable groups.
+                    
+                    4. Strengthening Institutions: Building strong, independent institutions that can enforce laws, protect human rights, and maintain ethical standards.
+                    
+                    5. Empowering Communities: Equipping individuals and communities with the tools, knowledge, and resources to demand accountability and advocate for equitable policies.
+                    
+                   </p>
+            </div>
+            <div class="platform-card">
+                <h3>Vision</h3>
+                <p>"A just and equitable society where transparency, accountability, and integrity in governance are upheld, ensuring equal opportunities and rights for all citizens, free from the grip of corruption and abuse of power." This vision emphasizes the following key elements:
+
+                    1. Integrity in Governance: A commitment to ethical leadership and decision-making at all levels of government.
+                    
+                    2. Transparency and Accountability: Ensuring open processes and holding individuals or institutions accountable for misuse of power.
+                    
+                    3. Empowerment of Citizens: Enabling people to participate actively in governance and hold leaders to their promises.
+                    
+                    4. Social Equity: Building systems that dismantle corruption-driven inequalities and prioritize fairness</p>
+            </div>
+            <div class="platform-card">
+                <h3>Our values</h3>
+                <p>Our organization have adopted the following core values:
+
+                    1. Integrity Upholding honesty and strong moral principles in all actions and decisions.
+                    
+                    2. Transparency Ensuring open communication, access to information, and clarity in processes to build public trust.
+                    
+                    3. Accountability Holding leaders, institutions, and members responsible for their actions and decisions.
+                    
+                    4. Justice Advocating for fairness, equality, and the rule of law, ensuring no one is above the law.
+                    
+                    5. Equity Committing to reducing inequalities and ensuring that resources and opportunities are distributed fairly.
+                    
+                    6. Empowerment Strengthening the capacity of citizens to demand accountability and participate in governance.
+                    
+                    7. Resilience Remaining steadfast in the fight against corruption, even in the face of challenges or resistance.
+                    
+                    8. Collaboration Partnering with citizens, civil society, and international organizations to combat corruption effectively.
+                    
+                    9. Inclusion We value diversity and believe all voices deserve to be heard.
+                    
+                    10. Sustainability We are committed to policies that protect our planet for future generations.
+                    
+                    11. Community Empowerment We believe in the power of individuals and communities to drive change</p>
+            </div>
+            <div class="platform-card">
+                <h3>Our Leadership Training</h3>
+                <p>We provide training for motivated people to become leaders and contribute positively to their communities</p>
+            </div>
+        </div>
+    </section>
+
+    <p><a href="index.html"> retour page d'acceuil/ back to home page</a> </p>
+
+    <footer>
+        <p>© 2025 Patriotic Union. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 1rem;">Privacy Policy</a>
+            <a href="#" style="color: white; margin: 0 1rem;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Newsletter form submission
+        document.querySelector('.cta-button').addEventListener('click', () => {
+            const email = prompt('Enter your email to join our movement:');
+            if (email) {
+                // Add your submission logic here
+                alert('Thank you for joining! We will be in touch.');
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.background = 'rgba(255,255,255,0.98)';
+            } else {
+                document.querySelector('.navbar').style.background = 'rgba(255,255,255,0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
